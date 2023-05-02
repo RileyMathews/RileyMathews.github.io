@@ -1,0 +1,6 @@
+---
+layout: page
+---
+{% for project in site.projects %}
+<a href="{{ project.url | relative_url }}">{{project.title}}</a>
+{% endfor %}
