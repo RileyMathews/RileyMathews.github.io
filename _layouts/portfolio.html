@@ -1,6 +1,21 @@
 ---
 layout: page
 ---
-{% for project in site.projects %}
-<a href="{{ project.url | relative_url }}">{{project.title}}</a>
-{% endfor %}
+<div id="post-list">
+    {% for project in site.projects %}
+        <div class="card post-preview">
+            <a href="{{ project.url | relative_url }}">
+                <div class="card-body">
+                    <h1 class="card-title">
+                        {{project.title}}
+                    </h1>
+
+                    <div class="card-text post-content">
+                        {% include no-linenos.html content=project.content %}
+                        {{ content | markdownify | strip_html | truncate: 200 | escape }}
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
