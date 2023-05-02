@@ -1,0 +1,15 @@
+{
+    "dockerComposeFile": "../docker-compose.yml",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "castwide.solargraph",
+                "kaiwood.endwise",
+                "misogi.ruby-rubocop",
+                "rebornix.ruby"
+            ]
+        }
+    },
+    "service": "dev",
+    "workspaceFolder": "/code"
+}
