@@ -9,7 +9,9 @@ layout: default
 
 {% for project in site.projects %}
 <div class="border-2 rounded-md p-2">
-    <h3>{{project.title}}</h3>
-    <p class="text-sm">{{ project.content | truncatewords: 50 }}</p>
+    <a href="{{project.url}}">
+        <h3 class="text-lg">{{project.title}}</h3>
+        <p class="text-sm">{{project.summary}}</p>
+    </a>
 </div>
 {% endfor %}
