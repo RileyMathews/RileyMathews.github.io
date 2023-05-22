@@ -1,9 +1,15 @@
 url: "https://rileymathews.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Riley Mathews" # the name of your site, e.g. ACME Corp.
+description: |
+  Welcome to my portfolio! This site shows off some personal projects I have worked on.
 
 plugins:
   - jekyll-postcss
 
 postcss:
   cache: false
+
+collections:
+  projects:
+    output: true
