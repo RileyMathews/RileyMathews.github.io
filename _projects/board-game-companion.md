@@ -11,3 +11,5 @@ The app allows users to create game templates and define the resources and dice 
 The app was originally written as a module in my [django demos](https://github.com/RileyMathews/django-demos/tree/master/resource_tracker) repository. But I eventually wanted to re-write the app using Ruby on Rails as I was starting to find the built in Django support for websockets lacking. Rails' [hotwire](https://hotwired.dev/) project seemed like a perfect fit for what I was trying to do and so I ended up re-writing the project in rails which can be seen at [boardgamecompanion.fly.dev](https://boardgamecompanion.fly.dev).
 
 The app uses Rails with entirely server rendered templates using turbo streams for any live updating. Tailwind CSS is used with a heavy use of Flowbite components.
+
+[See the code here](https://github.com/RileyMathews/board-game-companion)
