@@ -1,7 +1,6 @@
 ---
 layout: project
 title: Board Game Companion
-summary: A Ruby on Rails app utilizing tailwindcss and hotwire. Can be used as a digital companion app to manage resources and dice rolling for board games.
 ---
 # Board Game Companion
 This idea for this app came from a weekly board game group I was in. We were playing the 'Skyrim Adventure Game' and there were a few pain points. The resources were a little fiddley to work with and keep straight between sessions of the game, and the game did not come with enough dice for us to play multiple battles at once in a turn if we each decided to fight a different enemy.

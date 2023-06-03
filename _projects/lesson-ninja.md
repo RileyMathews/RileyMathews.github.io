@@ -1,7 +1,6 @@
 ---
 layout: project
 title: Lesson Ninja
-summary: My Nashville Software School capstone project. An application for private lesson management written in React, Django, Django Rest Framework, and Bulma CSS.
 ---
 # Lesson Ninja
 This was my final capstone project from my time at Nashville Software School. The inspiration came from my brief time before school working as a music instructor at a Guitar Center. One small frustration I had was writing up very similar music or guitar tabs for each student. While a copier on hand at the store probably would have worked just as well... leave it to a developer to over-engineer a solution 😂.
