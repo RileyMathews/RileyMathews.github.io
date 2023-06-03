@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Gamestone
+tags: react bulmacss django django-rest postgresql docker flyio
 ---
 # Gamestone
 [Gamestone](https://github.com/RileyMathews/gamestone) was my "midstone" project at Nashville Software School. We had just finished learning Javascript and React and how to consume APIs from the front end, and the "midstone" project was to show off that ability.
