@@ -1,9 +1,8 @@
----
-layout: project
-title: Lesson Ninja
-tags: react bulmacss django django-rest
----
-# Lesson Ninja
+Title: Lesson Ninja
+Date: 2023-06-26 14:30
+Category: Projects
+Tags: python, django, django-rest bulmacss, javascript, react
+
 This was my final capstone project from my time at Nashville Software School. The inspiration came from my brief time before school working as a music instructor at a Guitar Center. One small frustration I had was writing up very similar music or guitar tabs for each student. While a copier on hand at the store probably would have worked just as well... leave it to a developer to over-engineer a solution 😂.
 
 The idea behind the project: a teacher could setup pre-planned lessons with attached documents and assign them to students. When the student logged in they would see a list of their assigned lessons and be able to view and download the documents for study/practicing/etc...

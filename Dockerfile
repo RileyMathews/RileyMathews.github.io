@@ -1,12 +1,8 @@
-FROM ruby:3 as base
+FROM python:3.11 as base
 
 ARG USERNAME=docker
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
-
-# node setup
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt-get -y install nodejs
 
 # Create the user
 RUN groupadd --gid $USER_GID $USERNAME \
@@ -18,6 +14,19 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 USER $USERNAME
+
+# poetry setup
+RUN curl -sSL https://install.python-poetry.org | python -
+
+WORKDIR /tmp
+
+# tailwind setup
+RUN curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64 \
+    && chmod +x tailwindcss-linux-x64 \
+    && mv tailwindcss-linux-x64 "/home/$USERNAME/.local/bin/tailwindcss"
+
+# add executables to path
+ENV PATH="${PATH}:/home/$USERNAME/.local/bin"
 
 FROM base as dev
 

@@ -1,15 +1,18 @@
 {
     "dockerComposeFile": "../docker-compose.yml",
+    "workspaceFolder": "/code",
+    "service": "dev",
     "customizations": {
         "vscode": {
             "extensions": [
-                "castwide.solargraph",
-                "kaiwood.endwise",
-                "misogi.ruby-rubocop",
-                "rebornix.ruby"
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter"
             ]
         }
     },
-    "service": "dev",
-    "workspaceFolder": "/code"
+    "remoteUser": "docker",
+    "runServices": [
+        "dev"
+    ]
 }

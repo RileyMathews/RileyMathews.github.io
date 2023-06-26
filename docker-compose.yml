@@ -8,6 +8,12 @@ services:
     tty: true
     stdin_open: true
     ports:
-      - 4000:4000
+      - 8000:8000
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.docker_dev
     volumes:
       - .:/code
+      - poetry:/home/docker/.cache
+
+volumes:
+  poetry:

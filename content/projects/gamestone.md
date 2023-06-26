@@ -1,9 +1,9 @@
----
-layout: project
-title: Gamestone
-tags: react bulmacss django django-rest postgresql docker flyio
----
-# Gamestone
+Title: Gamestone
+Date: 2023-06-26 14:30
+Category: Projects
+Tags: python, django, django-rest bulmacss, javascript, react
+
+
 [Gamestone](https://github.com/RileyMathews/gamestone) was my "midstone" project at Nashville Software School. We had just finished learning Javascript and React and how to consume APIs from the front end, and the "midstone" project was to show off that ability.
 
 The short version of the concept was that this project would be "Goodreads for video games." I used the API available from [Giantbomb](https://giantbomb.com) to let users search through video games they enjoyed, and then provided an interface that allowed them to get suggestions on similar games.

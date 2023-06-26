@@ -1,3 +1,2 @@
-node_modules
-_site
-.jekyll-cache
+output
+__pycache__
