@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Riley Mathews - docker</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Riley Mathews</a></h1>
+                <nav><ul>
+                    <li><a href="/category/projects.html">Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/board-game-companion.html">Board Game Companion</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-06-26T14:30:00-05:00">
+                Published: Mon 26 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/riley-mathews.html">Riley Mathews</a>
+        </address>
+<p>In <a href="/category/projects.html">Projects</a>.</p>
+<p>tags: <a href="/tag/ruby.html">ruby</a> <a href="/tag/rails.html">rails</a> <a href="/tag/tailwindcss.html">tailwindcss</a> <a href="/tag/hotwire.html">hotwire</a> <a href="/tag/postgresql.html">postgresql</a> <a href="/tag/flyio.html">flyio</a> <a href="/tag/docker.html">docker</a> </p>
+</footer><!-- /.post-info --><p>This idea for this app came from a weekly board game group I was in. We were playing the 'Skyrim Adventure Game' and there were a few pain points. The resources were a little fiddley to work with and keep straight between sessions of the game, and the game did not come with enough dice for us to play multiple battles at once in a turn if we each decided to fight a different enemy.</p>
+<p>The app allows users to create game templates and define the resources and dice a game uses. Then they can create a room from a game and invite other users to join. Once in a room the users can manage their own resources and roll the dice for the game while other players can keep track of who has what resources and see a live updating roll log of other player's dice rolls.</p>
+<p>The app was originally written as a module in my <a href="https://github.com/RileyMathews/django-demos/tree/master/resource_tracker">django demos</a> repository. But I eventually wanted to re-write the app using Ruby on Rails as I was starting to find the built in Django support for websockets lacking. Rails' <a href="https://hotwired.dev/">hotwire</a> project seemed like a perfect fit for what I was trying to do and so I ended up re-writing the project in rails which can be seen at <a href="https://boardgamecompanion.fly.dev">boardgamecompanion.fly.dev</a>.</p>
+<p>The app uses Rails with entirely server rendered templates using turbo streams for any live updating. Tailwind CSS is used with a heavy use of Flowbite components.</p>
+<p><a href="https://github.com/RileyMathews/board-game-companion">See the code here</a></p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://github.com/rileymathews">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/riley-mathews">LinkedIn</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
