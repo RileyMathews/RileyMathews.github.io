@@ -1,8 +1,9 @@
-Title: Gamestone
-Date: 2023-06-26 14:30
-Category: Projects
-Tags: python, django, django-rest bulmacss, javascript, react
-
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: Gamestone
+tags: ["python", "django", "react", "javascript", "bulmacss", "django-rest"]
+summary: My Nashville Software School mid term project. A Django/React application to suggest video games based on your existing library.
+---
 
 [Gamestone](https://github.com/RileyMathews/gamestone) was my "midstone" project at Nashville Software School. We had just finished learning Javascript and React and how to consume APIs from the front end, and the "midstone" project was to show off that ability.
 

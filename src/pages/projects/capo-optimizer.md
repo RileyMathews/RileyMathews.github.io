@@ -1,7 +1,9 @@
-Title: Capo Optimizer
-Date: 2023-06-26 14:30
-Category: Projects
-Tags: ruby, rails, aws-lambda, rust, kotlin, c#, dotnet
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: Capo Optimizer
+tags: ["rust", "ruby", "c#", "dotnet", "rails"]
+summary: An algorithm for guitar capo position optimization implemented in many languages as a learning challenge.
+---
 
 This is an algorithm I came up with that determines the best fret to put a guitar capo on for any given set of keys. The inspiration for this came to me when I played electric guitar with an orchestra and the songs involved many key changes. Figuring out which capo position would lead to the easiest way to transpose all of the keys in a song wasn't always a simple process, but I figured I could automate it.
 

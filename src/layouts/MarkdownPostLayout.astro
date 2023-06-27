@@ -1,0 +1,15 @@
+---
+const { frontmatter } = Astro.props;
+import BaseLayout from "./BaseLayout.astro";
+import SpacedColumn from "../components/SpacedColumn.astro"
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+    <SpacedColumn>
+        <a class="text-blue-500 underline" href="/">Back to home page</a>
+        <h1 class="text-2xl">{frontmatter.title}</h1>
+        <div class="prose prose-invert">
+            <slot />
+        </div>
+    </SpacedColumn>
+</BaseLayout>
