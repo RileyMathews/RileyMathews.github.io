@@ -1,0 +1,10 @@
+---
+const { src } = Astro.props;
+---
+
+<div>
+    <video controls
+        >Your browser does not support the &lt;video&gt; tag.
+        <source src={src} />
+    </video>
+</div>
