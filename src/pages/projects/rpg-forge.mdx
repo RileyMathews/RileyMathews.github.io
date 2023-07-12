@@ -1,0 +1,17 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: RPG Forge
+tags: ["python", "django", "tailwindcss", "openai", "htmx", "django-channels", "celery"]
+summary: An app to help tabletop RPG game masters create and manage their custom worlds.
+preview_movie: "/rpg_forge/create_npc.mov"
+---
+import Video from "../../components/Video.astro"
+
+This project is still early in development but one that has me very excited! A hobby of mine is playing Dungeons and Dragons with my friends and this app was inspired from that.
+
+When I would run games I always wanted to try to build my own world instead of using one of the provided ones. This app helps in that process by using OpenAI's API to help generate new content for the world.
+
+Currently it can suggest names for things while also being able to fill out an empty description. See the example below where you can use it to quickly generate a backstory for an NPC (Non Player Character).
+
+<Video src="/rpg_forge/create_npc.mov" />
+<Video src="/rpg_forge/create_world.mov" />
