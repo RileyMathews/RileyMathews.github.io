@@ -10,7 +10,7 @@ const allProjects = await Astro.glob("./projects/*.md*");
         Welcome to my portfolio! I hope you enjoy reading about some of the fun
         projects I have created!
     </p>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 mt-4">
         {allProjects.map((project) => <ProjectPreview project={project} />)}
     </div>
 </BaseLayout>

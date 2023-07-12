@@ -1,9 +1,10 @@
 ---
 const { project } = Astro.props;
+import Video from "./Video.astro";
 ---
 
 <div
-    class="flex flex-col gap-4 p-4 bg-gray-800 border-l-gray-700 border-r-gray-700 border-b-gray-600 border-2 border-b-4 rounded-md border-gray-700"
+    class="flex flex-col gap-4 p-4 bg-gray-800 border-b-gray-600 border-t-blue-500 border-t-4 border-2 rounded-md border-gray-700"
 >
     <h4>{project.frontmatter.title}</h4>
     <div>
@@ -18,5 +19,12 @@ const { project } = Astro.props;
     <p>
         {project.frontmatter.summary}
     </p>
+    {
+        project.frontmatter.preview_movie && (
+            <div class="h-1/2 w-1/2">
+                <Video src={project.frontmatter.preview_movie} />
+            </div>
+        )
+    }
     <a class="text-blue-500 underline" href={project.url}>read more</a>
 </div>
